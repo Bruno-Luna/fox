@@ -19,9 +19,8 @@ Há um verbo `GET` que está apontando para `https://randomfox.ca/floof/`
 
 
 ## Screenshot
-
-![Raposa-imagem](https://raw.githubusercontent.com/Bruno-Luna/imagem-raposa-api/master/raposa-screenshot.JPG)
-
+<image src="https://github.com/Bruno-Luna/imagem-raposa-api/blob/master/assets/image/raposa-screenshot.JPG"  style="width: 700px;">
+</p>
 
 ## Demonstração
 
