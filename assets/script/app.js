@@ -1,25 +1,17 @@
 const img = document.querySelector('img')
 const button = document.querySelector('button')
 
-const sortearImagem = () => {
-  const xhr = new XMLHttpRequest();
+const raffleImage = () => {
+  const promisse = fetch('https://randomfox.ca/floof/')
 
-  xhr.open('GET', 'https://randomfox.ca/floof/');
-
-  xhr.send();
-  xhr.responseType = 'json';
-
-  xhr.onload = () => {
-    if (xhr.readyState == 4 && xhr.status == 200) {
-      img.setAttribute('src', xhr.response.image)
-    } else {
-      console.error(`Error: ${xhr.status}`);
-    }
-  };
+  promisse.then(response => response.json())
+             .then(data => img.setAttribute('src', data.image))
+             .catch(err => console.error(err.message))
+             .finally(console.info('Requisição finalizada!'))
 }
 
-sortearImagem()
+raffleImage()
 
-button.addEventListener('click', sortearImagem)
+button.addEventListener('click', raffleImage)
 
 
