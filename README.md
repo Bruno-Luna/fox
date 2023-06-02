@@ -15,7 +15,8 @@ Projeto cujo objetivo é consumir uma API de imagens randômicas de raposas.
 
 O projeto foi construido com a finalidade de aprender/fazer o consumo de uma API com JavaScript puro. 
 
-Há um verbo `GET` que está apontando para `https://randomfox.ca/floof/`
+- Utilização de Promisse
+- `GET` que está apontando para `https://randomfox.ca/floof/`
 
 
 ## Screenshot
